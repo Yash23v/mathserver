@@ -1,0 +1,35 @@
+body{
+    background-size: cover; 
+    background-position: center;
+    margin-top:10%;
+    text-align: center;
+}
+.box{
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+    height: 325px;
+    background-color:#e0ccaf;
+    border: 5px solid #452816;
+    border-radius: 15px;
+    box-shadow: black 0px 0px 15px; 
+}
+button{
+    height: 12%; 
+    width: 18%; 
+    font-size: 17px;
+    border-radius: 5px;
+    box-shadow: rgb(71, 71, 71) 2px 2px 5px;
+}
+h1{
+    background:linear-gradient(180deg,rgb(33, 16, 0),#a07856,rgb(33, 16, 0));
+    background-clip:text;
+    color:transparent;
+    font-size: 38px;
+}
+p{
+    font-size: 30px;
+}
+label{
+    font-size: 23px;
+}

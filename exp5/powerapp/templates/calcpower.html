@@ -1,0 +1,29 @@
+{% load static %}
+<html lang="en">
+    <head>
+        <title>POWER CALCULATOR</title>
+        <link rel="stylesheet" href="{% static 'design.css' %}">
+        <style>
+            body{
+                background-image: url("{% static 'powerbg8.jpg' %}");
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+        <h1>POWER OF LAMP</h1>
+        <form method="POST">
+            {% csrf_token %}
+            <label>Intensity: </label>
+            <input type="text" name="int" required>   (in cd)<br><br>
+
+            <label>Resistance: </label>
+            <input type="text" name="res" required>   (in Ω)<br><br>
+
+            <button type="submit">Calculate</button>   <button type="reset">Clear</button>
+        </form>
+        <label>Power: </label>
+        <input type="text" value="{{Power}}">   Watts
+        </div>
+    </body>
+</html>
